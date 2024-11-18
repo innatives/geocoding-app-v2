@@ -1,20 +1,19 @@
-// app/page.tsx
 'use client';
 import { useState } from 'react';
 import Papa from 'papaparse';
 import { AlertCircle, Upload, Download } from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { Progress } from '@/components/ui/progress';
+} from '../components/ui/select';
+import { Progress } from '../components/ui/progress';
 
 interface GeocodingResults {
   totalRows: number;
